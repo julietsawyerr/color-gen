@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Montserrat:wght@300;700&family=Roboto:wght@300;700&display=swap');
+
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background: #fafafa;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container{
+    width: 90%;
+    max-width: 1120px;
+      margin:0 auto;
+}
+
+.error{
+    border:3px solid red;
+}
+
+.num-error{
+    border:3px solid red;
+}
+
+.first-div, .second-div{
+    width:50%;
+}
+
+.form{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:10px;
+    width: 100%;       
+}
+
+ label{
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+
+input{
+    padding:10px;
+    font-size: 1.2rem;
+    width: 100%;
+    box-sizing: border-box; 
+} 
+
+button{
+    width: 100px;
+    background-color: #6666ff;
+    color:white;
+    font-size: 1.2rem;
+    border:none;
+    padding:12px 10px;
+    border-radius: 50px;
+   align-self: flex-end;
+   cursor: pointer;
+}
+
+
+.color{
+    min-height: calc(100vh - 100px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(223.33px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(96px, 1fr));
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.color-light{
+    color:white;
+}
+
+@media only screen and (max-width: 890px) {
+    .first-div, .second-div{
+        width: 100%;
+    }
+
+
+    .form{
+        display:flex;
+        flex-direction: column;
+    }
+
+    input{
+        padding:10px;
+        font-size: 1.2rem;
+        width: 100%;
+        box-sizing: border-box; 
+    } 
+    
+    button{
+        width: 100%;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border:none;
+        padding:12px 10px;
+        border-radius:none;
+       align-self: flex-start;
+    }
+  }
+
+
